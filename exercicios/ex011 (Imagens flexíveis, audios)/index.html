@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídeas em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes 
+    ou simplesmente aumente e diminua o tamamnho do seu navegador.
+    </p>
+
+    <picture>
+        <source media="(max-width: 760px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1060px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem flexível">
+    </picture>
+    <h1>Reproduzindo áudios</h1>
+    <p>Vamos aprender a reproduzir áudio em HTML5.</p>
+    <audio src="midia/good-for-the-ghost-Alge.mp3" controls loop ></audio>
+    <audio preload="metadata" autoplay>
+        <source src="midia/good-for-the-ghost-Alge.mp3" type="audio/mpeg">
+        <source src="midia/good-for-the-ghost-Alge.ogg" type="audio/ogg">
+        <source src="midia/good-for-the-ghost-Alge.wav" type="audio/wav">
+        <p>infelizmente esse aúdio não pêde ser executado no seu navegador. <a href="midia/good-for-the-ghost-Alge.mp3">
+        Click aqui para baixar o áudio.</a></p>
+    </audio>
+    <!--Formatos - MP3, WAV e OGG
+    são formatos para se ter compatibilidade
+    com todos os navegadores.--> 
+</body>
+</html>
