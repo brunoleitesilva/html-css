@@ -12,6 +12,7 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th {
@@ -23,22 +24,31 @@
             text-align: right;
         }
         
-        thead {
+        thead, tfoot {
             background-color: gray;
             color: white;
-        }
+       }
 
-        tfoot{
-            background-color: gray;
-            color: white;            
+       thead > tr > th {
+        position: sticky;
+        top: -1;
+        background-color: gray;
+       }
+        
+       /* Também pode ser usado EVEN, ODD*/
+        tbody > tr:nth-child(2n) {  
+           background-color: lightgray;
         }
+        
     </style>
 </head>
 <body>
     <h1>Uso de tabelas grandes</h1>
     <!--
         ANATOMIA PARA TABELAS GRANDES
+
         TABLE
+            CAPTION
             THEAD
                 TR, TD, TH
             TBODY
@@ -57,6 +67,14 @@
             <tr>
                 <td>São Paulo</td>
                 <td class="numero">45 919 049</td>
+            </tr>
+            <tr>
+                <td>asdasd</td>
+                <td class="numero">123123123</td>
+            </tr>
+            <tr>
+                <td>asdasda</td>
+                <td class="numero">5345345</td>
             </tr>
         </tbody>
         <tfoot>
