@@ -19,3 +19,7 @@ menu {
 article::after {
     content: 'Esse artigo foi impresso do site www.fuedase.com';
 }
+
+article {
+    width: 100%;
+}
